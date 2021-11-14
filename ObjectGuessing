@@ -1,0 +1,159 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+void main()
+{
+    /*guessing an object in Room with C;*/
+
+    instructions();
+   takeobjnum();
+
+}
+instructions()
+{
+
+    printf("\n\nYou have given 5 common objects of a Room.\n ");
+    printf("\nselect any one object and let program to guess it;\n\n");
+
+
+    printf("After selecting an object we will ask you some questions to guess.\n\n");
+
+
+    printf("(i)  : press 1 for fan.\n");
+    printf("(ii) : press 2 for Sofa.\n");
+    printf("(iii): press 3 for clock.\n");
+    printf("(iv) : press 4 for a picture frame.\n");
+    printf("(v)  : press 5 for television.\n\n");
+
+
+
+}
+takeobjnum()
+{
+    int objnum;
+
+    printf("Enter Here : ");
+    scanf("%d",&objnum);
+
+    questioning();
+
+}
+questioning()
+{
+
+   {
+
+
+    int yesorno;
+    /*fan*/
+
+    printf("\n\nThe object is hanging on wall vertically?\n");
+    printf("press 1 for yes, and 0 for no : ");
+
+    scanf("%d",&yesorno);
+
+
+    if(yesorno==0)
+    {
+        printf("\n\nDoes The object is hanging horizontally upside down?\n");
+        printf("press 1 for yes, and 0 for no : ");
+        scanf("%d",&yesorno);
+
+       if(yesorno==1)
+      {
+          printf("\n\nDoes it rotates fast and provides Air?\n");
+          printf("press 1 for yes, and 0 for no : ");
+          scanf("%d",&yesorno);
+
+           if(yesorno==1)
+          {
+          printf("It's a Fan!!!");
+
+          }
+        return;
+          }
+      }
+               /*sofa*/
+
+      if(yesorno==0)
+      {
+          printf("\n\nDoes it is resting on ground?\n");
+          printf("Press 1 for yes, and 0 for no : ");
+          scanf("%d",&yesorno);
+
+          if(yesorno==1)
+          {
+              printf("\n\nDoes it is comfortable and used to sit?\n");
+              printf("press 1 for yes, and 0 for no : ");
+              scanf("%d",&yesorno);
+
+              if(yesorno==1)
+              {
+                  printf("Its a sofa!!!");
+              }
+          return;
+          }
+
+
+          }
+                    /*clock*/
+
+           if(yesorno==1)
+      {
+          printf("\n\nDoes it tells You time?\n");
+          printf("Press 1 for yes, and 0 for no : ");
+          scanf("%d",&yesorno);
+
+          if(yesorno==1)
+          {
+              printf("\nIt's A Clock!!!");
+          }
+
+               /*television*/
+           if(yesorno==0)
+      {
+          printf("\n\nDoes it is attached to wall?\n");
+          printf("press 1 for yes, and 0 for no : ");
+          scanf("%d",&yesorno);
+
+          if(yesorno==1)
+          {
+              printf("\n\nDoes it used to show videos or graphics?\n");
+              printf("press 1 for yes, and 0 for no : ");
+              scanf("%d",&yesorno);
+
+              if(yesorno==1)
+              {
+                  printf("I's a television!!!");
+
+              }
+
+
+          }
+                /*frame*/
+
+          if(yesorno==0)
+          {
+              printf("\n\nDoes the object have a picture on it?\n");
+              printf("press 1 for yes, and 0 for no : ");
+              scanf("%d",&yesorno);
+
+              if(yesorno==1)
+              {
+                  printf("It's a Picture Frame!!!");
+              }
+      return;
+
+      }
+
+      }
+
+
+   }
+}
+}
+
+
+
+
